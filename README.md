@@ -1,2 +1,2 @@
 # Projects
-Hello my name is Arthur Phung and this repository includes previous projects that I have worked on either by myself or with a group.
+Hello my name is Arthur Phung and this repository includes previous personal and school projects that I have worked on.
