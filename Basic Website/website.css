@@ -1,0 +1,95 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+img.campus {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+}
+
+h2 {
+    color: brown;
+}
+
+p.toc {
+    text-align: center;
+}
+
+a.gol-box:link {color: brown;}
+a.gol-box:visited {color: brown;}
+
+.gol-box {
+    position: var(10px);
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    border-radius: 1px;
+  }
+
+button.gameOfLife {
+    display: block;
+    border: grey;
+    margin: 0 auto;
+    border-width: 0 10px;
+    border-radius: 5px;
+    background: brown;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.weather-box {
+    position: var(10px);
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    border-radius: 1px;
+}
+
+button.weather {
+    display: inline-block;
+    border: grey;
+    margin: 0 auto;
+    border-width: 0 10px;
+    border-radius: 5px;
+    background: brown;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.movie-box {
+    position: var(10px);
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    border-radius: 1px;
+  }
+
+button.movie {
+    display: inline-block;
+    border: grey;
+    border-width: 0 10px;
+    border-radius: 5px;
+    background: brown;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
