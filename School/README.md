@@ -1,1 +1,1 @@
-folder for all of my school projects
+This is a folder for all my school projects.
