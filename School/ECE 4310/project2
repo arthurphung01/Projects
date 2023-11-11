@@ -1,0 +1,60 @@
+#include<stdlib.h>
+#include<stdio.h>
+
+int main()
+{  
+    int pgSize,numPage,logMem,phyMem;
+    int temp, fs, numFrame;
+    int alloc[50],base[50],frame[50],page[50];
+
+    printf("\nEnter the logical memory (MB):");
+    scanf("%d",&logMem);
+
+    printf("Enter the physical memory (MB):");
+    scanf("%d",&phyMem);
+
+    printf("Enter the page size:");
+    scanf("%d",&pgSize);
+
+    fs = pgSize;
+
+    numPage = logMem/pgSize;
+
+    numFrame = phyMem/fs;
+
+    printf("\nNumber of pages  = %d",numPage);
+
+    printf("\nNumber of frames = %d\n   ",numFrame);
+
+    for(int i = 0; i < numFrame; i++)
+    {
+        alloc[i]=0;
+    }
+
+    for(int i = 0; i < numPage; i++)
+    {
+        temp = rand()%numFrame;
+
+        while(alloc[temp]==1)
+            temp = rand()%numFrame;
+
+        alloc[temp]=1;
+
+        frame[i]=temp;
+    }
+    printf("\nPage No \t Frame No");
+
+    for(int i = 0; i < numPage; i++)
+    {
+
+        base[i] = frame[i]*pgSize;
+
+        page[i] = i;
+
+        printf("\n%d\t\t %d\t \n",i,frame[i]);
+
+    }
+
+return 0;
+
+}
